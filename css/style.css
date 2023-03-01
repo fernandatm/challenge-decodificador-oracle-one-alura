@@ -1,0 +1,203 @@
+body {
+	background: lavender;
+	font-family: Inter;
+	font-weight: 400;
+}
+
+main {
+	display: flex;
+	width: 90%;
+}
+
+.logo {
+	width: 10%;
+	padding: 30px 0 0 30px;
+}
+
+.quadro {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.entrada {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	margin: 7em 1em 1em 1em;
+}
+
+#entrada {
+	background: lavender;
+	border: none;
+	font-size: 25px;
+	line-height: 40px;
+	color: darkslategray;
+	font-family: Inter;
+}
+
+#entrada:focus {
+	outline: none;
+}
+
+.aviso {
+	padding: 1em 0;
+}
+
+.aviso-requisitos {
+	font-size: 12px;
+	line-height: 18px;
+	color: darkslategray;
+}
+
+.botoes-entrada {
+	display: flex;
+	justify-content: space-between;
+	gap: 8px;
+}
+
+#criptografar {
+	font-family: Inter;
+	border: none;
+	border-radius: 10px;
+	background: skyblue;
+	width: 50%;
+	height: 3em;
+	font-size: 16px;
+	color: darkslategray;
+}
+
+#descriptografar {
+	font-family: Inter;
+	border: none;
+	border-radius: 10px;
+	background: lightblue;
+	width: 50%;
+	height: 3em;
+	font-size: 16px;
+	color: darkslategray;
+}
+
+#criptografar:hover, #descriptografar:hover {
+	background: lightcyan;
+	cursor: pointer;
+}
+
+.saida {
+	background: white;
+	border: none;
+	border-radius: 15px;
+	width: 35%;
+	height: 90%;
+	margin: 4em 2em 2em 2em;
+	padding: 1em 1em;
+	text-align: center;
+	color: darkslategray;
+	display: grid;
+	align-content: center;
+}
+
+#resultado {
+	display: none;
+}
+
+#saida {
+	background: white;
+	border: none;
+	font-size: 20px;
+	line-height: 1em;
+	color: darkslategray;
+	font-family: Inter;
+	width: -webkit-fill-available;
+}
+
+#sem-resultado img {
+	width: auto;
+}
+
+#sem-resultado h2 {
+	font-family: Inter;
+	font-weight: bold;
+	font-size: 22px;
+	margin: 0.5em;
+}
+
+#sem-resultado p {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 14px;
+	margin: 0.5em;
+}
+
+#sem-resultado {
+	width: 100%;
+}
+
+#copiar {
+	margin: 1em 0;
+	border-radius: 10px;
+	border-color: darkblue;
+	border-width: 1.5px;
+	background: white;
+	width: 100%;
+	height: 3em;
+	font-size: 16px;
+	color: darkblue;
+
+}
+
+#copiar:hover {
+	background: aliceblue;
+	cursor: pointer;
+}
+
+
+
+/*TABLET*/
+@media screen and (max-width: 720px) {
+	main {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.entrada, .saida {
+		width: 90%;
+		height: 20em;
+		margin: 2em;
+		padding: 0;
+	}
+
+	#resultado {
+		padding: 1em;
+	}
+
+}
+
+@media screen and (max-width: 1200px) {
+	main {
+		width: 100%;
+		display: block;
+	}
+	.entrada {
+		margin: 2em 3em;
+		height: 14em;
+		width: 85%;
+	}
+
+	.saida {
+		margin: 2em 3em;
+		height: 18em;
+		width: 80%;
+		justify-items: center;
+	}
+		
+	#sem-resultado {
+		width: 55%;
+	}
+
+	#resultado {
+		width: 90%;
+	}
+	
+}

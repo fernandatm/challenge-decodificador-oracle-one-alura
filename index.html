@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">		
+		<title>Decodificador de texto</title>
+
+	</head>
+
+	<body>
+		<main>
+			<div class="logo">
+				<h1><img src="img/logo-alura.png" alt="Alura"></h1>				
+			</div>
+			<div class="quadro">
+				<section class="entrada">
+					<textarea cols="10" rows="10" id="entrada" required autofocus placeholder="Digite seu texto"></textarea>
+					
+					<div class="aviso">
+						<p class="aviso-requisitos"><img src="img/excl.svg"> Apenas letras minúsculas e sem acentos.</p> 				
+					</div>
+
+					<div class="botoes-entrada">
+						<button id="criptografar" onclick="criptografar()">Criptografar</button>
+						<button id="descriptografar" onclick="descriptografar()">Descriptografar</button>
+					</div>
+
+				</section>
+
+				<section class="saida">
+					<div id="sem-resultado">
+						<img src="img/imagem-saida.png">
+						<h2>Nenhuma mensagem encontrada</h2>					
+						<p>Digite um texto que você deseja criptografar ou descriptografar.</p> 
+					</div>					
+					<div id="resultado">
+						<textarea cols="15" rows="10" id="saida" readonly placeholder="" disabled></textarea>
+						<button id="copiar" onclick="copiar()">Copiar</button>
+					</div>
+				</section>				
+			</div>
+
+						
+		</main>
+		<footer>
+			
+		</footer>
+	</body>
+	<script src="js/criptografar.js"></script>
+	<script src="js/descriptografar.js"></script>
+	<script src="js/copiar.js"></script>
+
+
+	
+</html>
